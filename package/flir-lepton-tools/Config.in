@@ -1,0 +1,5 @@
+config BR2_PACKAGE_FLIR_LEPTON_TOOLS
+    bool "flir-lepton-tools"
+    help
+        Collection of tools for FLIR Lepton thermal sensors.
+
