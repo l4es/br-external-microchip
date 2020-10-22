@@ -1,0 +1,5 @@
+config BR2_PACKAGE_LEPTON_SPIDEV_CAPTURE
+    bool "lepton-spidev-capture"
+    help
+        Capture thermal image from FLIR Lepton sensor via /dev/spidevX.Y
+
