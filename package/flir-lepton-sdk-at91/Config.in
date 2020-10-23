@@ -1,0 +1,22 @@
+config BR2_PACKAGE_FLIR_LEPTON_SDK_AT91
+	bool "flir-lepton-sdk-at91"
+	help
+	  This is the FLIR lepton SDK for Microchip A91 based platforms.
+	  https://github.com/l4es/flir-lepton-sdk-at91
+
+if BR2_PACKAGE_FLIR_LEPTON_SDK_AT91
+menu "Build Configuration"
+
+config BR2_PACKAGE_FLIR_LEPTON_SDK_AT91_CONF_DEBUG
+        bool "Debug Build"
+        default y
+
+config BR2_PACKAGE_FLIR_LEPTON_SDK_AT91_CONF_RELEASE
+        bool "Release Build"
+endmenu
+
+config BR2_PACKAGE_FLIR_LEPTON_SDK_AT91_CONF
+        string
+        default "Debug" if BR2_PACKAGE_FLIR_LEPTON_SDK_AT91_CONF_DEBUG
+        default "Release" if BR2_PACKAGE_FLIR_LEPTON_SDK_AT91_CONF_RELEASE
+endif
