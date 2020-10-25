@@ -1,5 +1,6 @@
 menu "Tools for FLIR Lepton thermal sensors"
 
 source "$BR2_EXTERNAL_MCHP_PATH/package/flir-lepton-tools/lepton-spidev-capture/Config.in"
+source "$BR2_EXTERNAL_MCHP_PATH/package/flir-lepton-tools/lepton-v4l2-capture/Config.in"
 
 endmenu

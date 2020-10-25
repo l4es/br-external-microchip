@@ -1,0 +1,6 @@
+config BR2_PACKAGE_LEPTON_V4L2_CAPTURE
+    bool "lepton-v4l2-capture"
+    depends on BR2_PACKAGE_V4L2LOOPBACK
+    depends on BR2_PACKAGE_FLIR_LEPTON_SDK_AT91
+    help
+        Capture thermal image from FLIR Lepton sensor via /dev/videoX
