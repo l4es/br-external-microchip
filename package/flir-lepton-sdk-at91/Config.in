@@ -5,7 +5,8 @@ config BR2_PACKAGE_FLIR_LEPTON_SDK_AT91
 	  https://github.com/l4es/flir-lepton-sdk-at91
 
 if BR2_PACKAGE_FLIR_LEPTON_SDK_AT91
-menu "Build Configuration"
+choice
+prompt "Build Configuration"
 
 config BR2_PACKAGE_FLIR_LEPTON_SDK_AT91_CONF_DEBUG
         bool "Debug Build"
@@ -13,7 +14,7 @@ config BR2_PACKAGE_FLIR_LEPTON_SDK_AT91_CONF_DEBUG
 
 config BR2_PACKAGE_FLIR_LEPTON_SDK_AT91_CONF_RELEASE
         bool "Release Build"
-endmenu
+endchoice
 
 config BR2_PACKAGE_FLIR_LEPTON_SDK_AT91_CONF
         string
