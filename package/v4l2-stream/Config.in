@@ -1,8 +1,0 @@
-config BR2_PACKAGE_V4L2_STREAM
-    bool "v4l2-stream"
-    depends on BR2_PACKAGE_LIBGLIB2
-    depends on BR2_PACKAGE_BOOST_SYSTEM
-    depends on BR2_PACKAGE_GSTREAMER1
-    depends on BR2_PACKAGE_WEBSOCKETPP
-    help
-        Stream V4L2 camera to client.

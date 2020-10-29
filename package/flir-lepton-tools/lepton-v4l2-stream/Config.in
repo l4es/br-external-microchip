@@ -1,0 +1,9 @@
+config BR2_PACKAGE_LEPTON_V4L2_STREAM
+    bool "lepton-v4l2-stream"
+    depends on BR2_PACKAGE_LEPTON_V4L2_CAPTURE
+    depends on BR2_PACKAGE_LIBGLIB2
+    depends on BR2_PACKAGE_BOOST_SYSTEM
+    depends on BR2_PACKAGE_GSTREAMER1
+    depends on BR2_PACKAGE_WEBSOCKETPP
+    help
+        Stream FLIR Lepton as V4L2 camera to client.
